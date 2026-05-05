@@ -1,0 +1,16 @@
+[
+    {
+        "url": "https://shopee.vn/",
+        "login": {
+            "email": "phanthailuan@gmail.com",
+            "password": "Abc123toxyz789"
+        },
+        "search": {
+            "keyword": "wireless earbuds",
+            "sqlPayload": "' OR '1'='1"
+        },
+        "rate": {
+            "xssPayload": "<script>alert('xss')</script>"
+        }
+    }
+]

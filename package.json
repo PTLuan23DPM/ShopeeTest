@@ -1,0 +1,26 @@
+{
+  "name": "testshopee",
+  "version": "1.0.0",
+  "description": "Shopee Selenium Test Suite",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha \"tests/**/*.js\" --no-timeouts --reporter mochawesome --require mochawesome/register --reporter-options charts=true"
+  },
+  "author": "Antigravity",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "selenium-webdriver": "^4.43.0"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "chai-as-promised": "^8.0.2",
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
