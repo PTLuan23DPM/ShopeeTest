@@ -146,6 +146,12 @@ describe('Shopee Functional & Security Automation Testing', function () {
             throw new Error("Rate page blocked by anti-bot. Failing test.");
         }
 
+        // Check if the actual purchase list elements are present
+        const purchaseListItems = await driver.findElements(By.xpath(locators.purchasePage.container));
+        if (purchaseListItems.length === 0) {
+            throw new Error("Purchase history page elements not found. Likely blocked or session expired.");
+        }
+
         let alertPresent = false;
         try {
             let alert = await driver.switchTo().alert();

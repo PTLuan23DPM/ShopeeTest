@@ -14,11 +14,14 @@ module.exports = {
     productPage: {
         addToCartBtn: "//button[contains(.,'Thêm vào giỏ hàng') or contains(.,'Add To Cart')]",
         cartBadge: "//a[contains(@href, '/cart')]//div[contains(@class,'cart-number')]",
-        variantBtn: "(//div[contains(@class, 'product-variation')])[1]" // selects the first variant just in case
+        variantBtn: "(//div[contains(@class, 'product-variation')])[1]"
     },
     ratePage: {
         commentInput: "//textarea",
         submitReviewBtn: "//button[contains(.,'Hoàn thành') or contains(.,'Submit')]",
         reviewText: "//div[contains(@class, 'shopee-product-rating__main')]"
+    },
+    purchasePage: {
+        container: "//div[contains(@class, 'purchase-list-page__tabs-container') or contains(@class, 'purchase-list-page')]"
     }
 }
